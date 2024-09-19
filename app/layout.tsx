@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Sidebar from "@/components/Sidebar";
 
 
 export const metadata: Metadata = {
-  title: "Car Hub",
-  description: "Hub for cars",
+  title: "Spotify Clone",
+  description: "Spotify Clone",
 };
 
 export default function RootLayout({
@@ -12,9 +13,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
+  return ( 
     <html lang="en">
-      <body>{children}</body>
+      <body><Sidebar>{children}</Sidebar></body>
     </html>
   );
 }

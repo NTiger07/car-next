@@ -1,6 +1,6 @@
 export default function Home() {
   return (
     
-  <div className="bg-white h-[100vh] w-[100vw]"></div>
+  <div className="text-green-500 ">Main Content</div>
   );
 }
